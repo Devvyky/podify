@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import CssBaseline from "@material-ui/core/CssBaseline";
+import { Grid, Typography, Container } from "@material-ui/core";
+import ButtomNavigation from "./components/BottomNavigation";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="sm" disableGutters="false">
+      <Typography
+        component="div"
+        style={{ backgroundColor: "#f0f0f0", height: "90vh" }}
+      />
+      <Grid
+        container
+        direction="row"
+        xs="12"
+        justify="center"
+        alignItems="center"
+      >
+        <ButtomNavigation />
+      </Grid>
+    </Container>
+
+    // <div className="App">
+    // </div>
   );
 }
 
 export default App;
+
+// export default function SimpleContainer() {
+//   return (
+//     <React.Fragment>
+//       <CssBaseline />
+//       <Container maxWidth="sm">
+//         <Typography
+//           component="div"
+//           style={{ backgroundColor: "#cfe8fc", height: "100vh" }}
+//         />
+//       </Container>
+//     </React.Fragment>
+//   );
+// }
